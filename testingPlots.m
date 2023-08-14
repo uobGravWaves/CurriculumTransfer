@@ -3,7 +3,7 @@
 %Change seaice for whichever data you want
 % cd('Peter-Phoebe/CT')
 
-filepath = 'C:\Users\pn399\Documents\GitHub\Peter-Phoebe\CT\';
+filepath = 'C:\Users\Peter\OneDrive - University of Bath\Desktop\BathBits\gitPROJECTS\CurriculumTransfer';
 
 a = dir(fullfile(filepath, 'data', 'seaice2017_1stofMonth', '*.nc'));
 n = numel(a);
@@ -39,9 +39,10 @@ for ii = 1:50 % i.e. do this five times so the GIF repeats
             %For ozone
             % pcolor(dataset.approximate_altitude, dataset.latitude_centers, bigVar(:,:,x));shading flat
             colorbar
-            clim([0,100])
-            drawnow
-            pause(0.05)
+            title(x)
+%             clim([0,100])
+%             drawnow
+%             pause(0.05)
     end
 end
 
